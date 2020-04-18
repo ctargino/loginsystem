@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+body.lscreen {
+  background-image: url(wall.jpg);
+  background-size: cover;
+  color: #111;
+}
+
+body.hideScroll {
+  overflow: hidden;
+}
+
+#logcont {
+  display: flex;
+  margin: 15% 40%;
+  align-items: center;
+  opacity: 0.8;
+ 
+}
+
+#regcont {
+  display: flex;
+  margin: 15% 30%;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.name {
+  margin-right: 30px;
+}
+
+.forms-reg form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+div .label {
+  margin-top: 15px;
+}
+
+a {
+  color: #111;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+a:hover {
+  color: brown;
+  transition: 400ms;
+}
+
+#buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+button {
+  color: #111;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  color: brown;
+  transition: 400ms;
+}
+
+label {
+  font-weight: bold; 
+}
+
+input {
+  border-radius: 6px;
+}
+
+#head {
+  display: flex;
+  background-color: black;
+  opacity: 0.8;
+  align-items: center;
+  justify-content: center;
+}
+
+#head h1 {
+  color:#111 ;
+  margin-right: 920px;
+}

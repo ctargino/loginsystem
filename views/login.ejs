@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel</title>
+</head>
+<body class="lscreen">
+  <section id="logcont">
+
+    <div class="name">
+      <h1>Login</h1>
+      <% if (messages.error) { %>
+        <%= messages.error %>
+      <% } %>
+
+    </div>
+    
+    <div class="forms">
+      <form action="/login" method="POST">
+
+      <div class="label">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="label">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      
+      <section id="buttons">
+        <button type="submit">Login</button>
+  
+        <a href="/register">Registrar</a>
+      </section>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
